@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de6890e11a9b7ce44853856f89909879, type: 3}
+  m_Name: PrefabContainer
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 1463079053517143902, guid: cb76b6e27293cf1418d9c63d696023ec, type: 3}
+  bulletHole: {fileID: 6319866755181693751, guid: 3b6a5379b5c85124f912096ddf372be7, type: 3}
+  bonuses: {fileID: 4688894016067750068, guid: 461aba1d306aedc4e9b45807e1743bf4, type: 3}
+  zombie: {fileID: 5095672474112371425, guid: e19d855bf04314d4186636773e8aeb98, type: 3}
