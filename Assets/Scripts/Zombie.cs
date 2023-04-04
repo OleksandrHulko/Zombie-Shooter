@@ -68,7 +68,7 @@ public class Zombie : MonoBehaviour
     #region Private Methods
     private void Start()
     {
-        _playerLayer = LayerMask.NameToLayer("Player"); // TODO initialize in other script
+        _playerLayer = LayerMask.NameToLayer("Player");
         _headLayer   = LayerMask.NameToLayer("Head");
         _bodyLayer   = LayerMask.NameToLayer("Body");
         _handLayer   = LayerMask.NameToLayer("Hand");
@@ -80,7 +80,7 @@ public class Zombie : MonoBehaviour
 
     private void Update()
     {
-        if (isDead())
+        if ( isDead() )
             return;
         
         SetDestination();
@@ -208,10 +208,10 @@ public class Zombie : MonoBehaviour
     
     private void AddHealth( int health )
     {
-        if (isDead())
+        if ( isDead() )
             return;
         
-        if (health < 0)
+        if ( health < 0 )
             PlayAudioClip(_audioDamage);
         
         _health += health;
@@ -246,7 +246,7 @@ public class Zombie : MonoBehaviour
 
         IEnumerator reactionOnDamage()
         {
-            if (_health > MAX_HEALTH / 4 )
+            if (_health > (MAX_HEALTH / 4) )
             {
                 _navMeshAgent.enabled = false;
                 yield return new WaitForSeconds(coefficient);
