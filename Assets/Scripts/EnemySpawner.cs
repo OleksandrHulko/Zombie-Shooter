@@ -15,8 +15,8 @@ public class EnemySpawner : MonoBehaviour
     #endregion
     
     #region Private Fields
-    private const int MAX_ENEMY_COUNT_ON_SCENE = 30;
-    private const int TIME_TO_SPAWN = 5;
+    private const int MAX_ENEMY_COUNT_ON_SCENE = 50;
+    private const int TIME_TO_SPAWN = 2;
 
     private int enemy_count_on_scene = 0;
     
