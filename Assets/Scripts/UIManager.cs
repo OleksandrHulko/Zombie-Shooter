@@ -45,6 +45,7 @@ public class UIManager : MonoBehaviour
         if(!_dialogWindow.isVisible)
         {
             SetGamePause();
+            
             _dialogWindow.Init(Localization.PAUSE, Localization.QUIT, Localization.RESUME, QuitToMenu, () => SetGamePause(false));
             _dialogWindow.SetVisible();
         }
