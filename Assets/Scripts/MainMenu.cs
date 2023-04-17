@@ -56,7 +56,7 @@ public class MainMenu : MonoBehaviour
 
             int getProgress()
             {
-                return Mathf.RoundToInt(asyncOperation.progress / 0.9f);
+                return Mathf.RoundToInt(asyncOperation.progress / 0.9f) * 100;
             }
         }
 
