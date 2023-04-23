@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour
 {
     #region Private Fields
     private const float LIFE_TIME = 5.0f;
-    private const int DAMAGE = 20;
+    private const int DAMAGE = 15;
 
     private string TAG_NAME = "ForBulletHoles";
     #endregion
