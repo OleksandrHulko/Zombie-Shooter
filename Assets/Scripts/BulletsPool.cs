@@ -11,7 +11,7 @@ public class BulletsPool : MonoBehaviour
     #endregion
 
     #region Private Fields
-    private const int COUNT = 32;
+    private const int COUNT = 64;
     private int counter = 0;
     #endregion
 
@@ -35,9 +35,7 @@ public class BulletsPool : MonoBehaviour
     {
         GameObject bullet = bullets[counter];
         
-        bullet.transform.position = position;
-        bullet.transform.rotation = rotation;
-        
+        bullet.transform.SetPositionAndRotation(position, rotation);
         bullet.SetActive(true);
         
         counter++;
