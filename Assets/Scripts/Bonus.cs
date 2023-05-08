@@ -20,14 +20,14 @@ public class Bonus : MonoBehaviour
     #region Private Fields
     private const string PLAYER_TAG = "Player";
     
-    private const int HEALTH_BONUS  = 20;
+    private const int HEALTH_BONUS  = 15;
     private const int BULLETS_BONUS = 30;
     
     private BonusType _bonusType = BonusType.None;
     #endregion
+    
 
     #region Private Methods
-
     private void Start()
     {
         SetBonusType((BonusType) Random.Range(1, 3));
@@ -89,7 +89,7 @@ public class Bonus : MonoBehaviour
 }
 
 #region Enum
-public enum BonusType: byte
+public enum BonusType : byte
 {
     None = 0 ,
     Health ,
