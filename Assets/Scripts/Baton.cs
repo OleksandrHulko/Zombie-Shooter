@@ -7,7 +7,7 @@ public class Baton : MonoBehaviour
     #region Private Fields
     private static readonly string _playerTag = "Player";
     private const int MIN_DAMAGE = 6;
-    private const int MAX_DAMAGE = 14;
+    private const int MAX_DAMAGE = 24;
     #endregion
     
     #region Private Methods
