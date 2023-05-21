@@ -67,6 +67,9 @@ public class Player : MonoBehaviour
         instance = this;
 
         AddHealth(MAX_HEALTH);
+        
+        if(Application.platform == RuntimePlatform.WebGLPlayer)
+            _mouseSensitivity*=2;
     }
 
     private void Update()
