@@ -218,19 +218,10 @@ public class AutomaticRifle : MonoBehaviour
         onInStockBulletsCountChanged?.Invoke(_inStockBullets);
     }
 
-    private bool IsAnimationPlaying(string name)
-    {
-        return ClipInfos().Any(x => x.clip.name == name);
-    }
+    private bool IsAnimationPlaying(string name) => ClipInfos().Any(x => x.clip.name == name);
     
-    private bool IsInTransition()
-    {
-        return _animator.IsInTransition(0);
-    }
+    private bool IsInTransition() => _animator.IsInTransition(0);
 
-    private AnimatorClipInfo[] ClipInfos()
-    {
-        return _animator.GetCurrentAnimatorClipInfo(0);
-    }
+    private AnimatorClipInfo[] ClipInfos() => _animator.GetCurrentAnimatorClipInfo(0);
     #endregion
 }
