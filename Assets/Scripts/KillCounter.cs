@@ -11,8 +11,8 @@ public class KillCounter : MonoBehaviour , IUserInterface
 
     #region Private Fields
     private int counter = 0;
-    private int normalFontSize = 40;
-    private int maxFontSize = 50;
+    private int normalFontSize = 35;
+    private int maxFontSize = 45;
     #endregion
     
     #region Public Methods
