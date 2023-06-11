@@ -21,6 +21,10 @@ public class UIButton : MonoBehaviour , IPointerEnterHandler , IPointerExitHandl
     private Button _button = null;
     #endregion
     
+    #region Private Fields
+    private static Vector3 _newScale = new Vector3(1.1f, 1.1f, 1.1f);
+    #endregion
+    
     #region Public Methods
     public void SetText(string text)
     {
@@ -31,7 +35,7 @@ public class UIButton : MonoBehaviour , IPointerEnterHandler , IPointerExitHandl
     
     public void OnPointerEnter(PointerEventData eventData)
     {
-        transform.localScale = new Vector3(1.1f, 1.1f, 1.1f);
+        transform.localScale = _newScale;
         Play(_audioPointing);
     }
 
