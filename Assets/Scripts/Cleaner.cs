@@ -12,6 +12,7 @@ public class Cleaner : MonoBehaviour
     [SerializeField]
     private bool has_sprite = false;
     #endregion
+    
 
     #region Private Methods
     private IEnumerator Start()
