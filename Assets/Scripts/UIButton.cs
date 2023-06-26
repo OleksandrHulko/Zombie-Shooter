@@ -22,7 +22,7 @@ public class UIButton : MonoBehaviour , IPointerEnterHandler , IPointerExitHandl
     #endregion
     
     #region Private Fields
-    private static Vector3 _newScale = new Vector3(1.1f, 1.1f, 1.1f);
+    private static Vector3 _newScale = new Vector3(1.15f, 1.15f, 1.15f);
     #endregion
     
     #region Public Methods
