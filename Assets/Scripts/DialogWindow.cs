@@ -25,15 +25,15 @@ public class DialogWindow : MonoBehaviour
     #region Public Methods
     public void Init( string description, string leftBtnTxt, string rightBtnTxt, Action onLeftBtnClick, Action onRightBtnClick = null )
     {
-        _uiButtonLeft.onClick().RemoveAllListeners();
+        _uiButtonLeft .onClick().RemoveAllListeners();
         _uiButtonRight.onClick().RemoveAllListeners();
         
         _descriptionText.text = description;
         
-        _uiButtonLeft.SetText(leftBtnTxt);
+        _uiButtonLeft .SetText(leftBtnTxt);
         _uiButtonRight.SetText(rightBtnTxt);
 
-        _uiButtonLeft.onClick().AddListener(() => onClick(onLeftBtnClick));
+        _uiButtonLeft .onClick().AddListener(() => onClick(onLeftBtnClick));
         _uiButtonRight.onClick().AddListener(() => onClick(onRightBtnClick));
 
         void onClick(Action onBtnClick = null)
