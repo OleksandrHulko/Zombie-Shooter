@@ -50,7 +50,7 @@ public class AutomaticRifle : MonoBehaviour
     private const string A_SHOOT   = "AimedShoot";
     
     private const int MAGAZINE_CASE_CAPACITY     = 30;
-    private const int MAX_BULLETS_COUNT_IN_STOCK = 150;
+    private const int MAX_BULLETS_COUNT_IN_STOCK = 120;
 
     private int _insertedBullets = 0;
     private int _inStockBullets = 0;
