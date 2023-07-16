@@ -41,8 +41,8 @@ public class Zombie : MonoBehaviour
     private static readonly int _attack  = Animator.StringToHash("Attack");
     private static readonly int _walking = Animator.StringToHash("Walking");
 
-    private const int SYNCHRONIZED_SPEED = 2;
-    private const int DETECTION_DISTANCE = 3;
+    private const int SYNCHRONIZED_SPEED = 2.5f;
+    private const int DETECTION_DISTANCE = 3.5f;
     private const int MAX_HEALTH         = 200;
     private const int SECONDS_TO_DESPAWN = 3;
     
